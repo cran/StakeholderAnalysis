@@ -1,0 +1,4 @@
+exportPattern("^[[:alpha:]]+")
+importFrom("grDevices", "dev.off", "pdf")
+importFrom("graphics", "arrows", "hist", "lines", "mtext", "par","plot", "symbols", "text")
+importFrom("stats", "pnorm", "pt")
