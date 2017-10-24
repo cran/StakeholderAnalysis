@@ -1,6 +1,6 @@
 Package: StakeholderAnalysis
-Version: 1.0
-Date: 2017-08-31
+Version: 1.1
+Date: 2017-10-24
 Title: Measuring Stakeholder Influence
 Authors@R: c(person("Anna", "Zamojska", role="aut", email="anna.zamojska@ug.edu.pl"),
 	   person("Piotr", "Zientara", role="aut", email="zientara@fest.pl"),
@@ -16,6 +16,6 @@ Description: Proposes an original instrument for measuring stakeholder influence
 License: GPL (>= 2)
 URL: https://www.r-project.org
 NeedsCompilation: no
-Packaged: 2017-09-01 11:46:51 UTC; Marcin
+Packaged: 2017-10-24 09:34:38 UTC; Marcin
 Repository: CRAN
-Date/Publication: 2017-09-01 12:09:52 UTC
+Date/Publication: 2017-10-24 10:04:08 UTC

@@ -284,10 +284,18 @@ AtribIdent=list(Mean=Odpowiedzi3SR, Fra=Odpowiedzi3)
 BenefCost=function(CountResponses)
 { # pocz BenefCost
 Odpowiedzi=CountResponses
-LicznikDanychProf=21:25
-LicznikDanychCost=26:30
+# ustalenie gdzie w CountResponses sa odpowiedzi dla benef i cost
+NamesOdpowiedzi=substr(names(Odpowiedzi),1,3)
+pom01=(NamesOdpowiedzi=="Ben")
+pom02=(NamesOdpowiedzi=="Cos")
+LicznikDanychProf=NULL
+LicznikDanychCost=NULL
+for (i in 1:length(pom01))
+{ # pocz i
+if (pom01[i]) LicznikDanychProf=c(LicznikDanychProf,i)
+if (pom02[i]) LicznikDanychCost=c(LicznikDanychCost,i)
+} # kon i
 LicznikDanychProfCost=c(LicznikDanychProf,LicznikDanychCost)
-
 
 ProfCost=data.frame(matrix(NA,nrow(Odpowiedzi),2), row.names=row.names(Odpowiedzi))
 names(ProfCost)=c("BenefInd","CostInd")
@@ -375,12 +383,25 @@ CollabPotential=function(AttribIdent)
 Odpowiedzi3=AttribIdent$Mean
 Odpowiedzi31=AttribIdent$Fra
 
-Odpowiedzi4=Odpowiedzi3[,c(2,4,3)]
+# szukanie kolumn dla power legitimacy i urgency
+NameOdp3i31=names(Odpowiedzi3)
+pom01=(NameOdp3i31=="Pow")
+pom02=(NameOdp3i31=="Leg")
+pom03=(NameOdp3i31=="Urg")
+NoPowLegUrg=c(NA,NA,NA)
+for (i in 1:length(pom01))
+{ # pocz i
+if (pom01[i]) NoPowLegUrg[1]=i
+if (pom02[i]) NoPowLegUrg[2]=i
+if (pom03[i]) NoPowLegUrg[3]=i
+} # kon i
+
+Odpowiedzi4=Odpowiedzi3[,NoPowLegUrg]
 Nazwy4=names(Odpowiedzi4)
 Odpowiedzi4=cbind(Odpowiedzi4,NA)
 names(Odpowiedzi4)=c(Nazwy4,"colaboration")
 
-Odpowiedzi41=Odpowiedzi31[,c(2,4,3)]
+Odpowiedzi41=Odpowiedzi31[,NoPowLegUrg]
 Nazwy41=names(Odpowiedzi41)
 Odpowiedzi41=cbind(Odpowiedzi41,NA)
 names(Odpowiedzi41)=c(Nazwy41,"colaboration")
