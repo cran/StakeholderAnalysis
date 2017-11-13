@@ -1,7 +1,7 @@
-c0208b3b685feefc237b6310011c2ac5 *DESCRIPTION
+a05605ef65150b4b3065d89b14005aa5 *DESCRIPTION
 72f32a03585eed08a85839734d191103 *NAMESPACE
-abb1f885bdf33751301d83b011e831fb *R/kod_do_11.R
-aa78f7b6f998bfdd53b780ea57179797 *build/partial.rdb
+a487bb7243715536d8abedb08c29f365 *R/kod_do_11.R
+a959748eb7c91e096d32aec73be26b62 *build/partial.rdb
 78078f631c45bc1a48fd3b6ea25e326c *data/DataExp.RData
 965425c1a6a6383a4fe0dfaba2bfde8d *man/AttribIdent.Rd
 76cd6b8dfaf004aac0e5a343a2efadca *man/AttribPict.Rd
@@ -14,4 +14,4 @@ fd58ca3303893e1bc969ce43c1733f21 *man/PrelCalc.Rd
 7e6cb7dec6e6e57b80ea0657a77c311a *man/RelationPict.Rd
 f1a525b79bc42a3f914aaa47bc0b2f04 *man/RespVerif.Rd
 1ab3bf98e92288cc376382863d4696c5 *man/StakeholdClassif.Rd
-63a04c7b321cd0f25ae992b69ceee0d9 *man/StakeholderAnalysis_1.1-package.Rd
+93eb1abddfcd8cfe4671897a9f55ed3f *man/StakeholderAnalysis_1.2-package.Rd

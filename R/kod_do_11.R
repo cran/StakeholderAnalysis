@@ -967,6 +967,8 @@ if (DoPliku==1) dev.off()
 
 # Odpowiedzi
 NaHist01=apply(X=Odpowiedzi, MARGIN=2, FUN=sum)
+# te adresy moga byc stale
+# bo kolumny w obiekcie Odpowiedzi sa stale
 NaHistAt=NaHist01[1:5]
 NaHistPo=NaHist01[6:10]
 NaHistUr=NaHist01[11:15]
